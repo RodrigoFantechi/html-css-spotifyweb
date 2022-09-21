@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -18,28 +21,76 @@
 <body>
     <div class="main">
         <div class="sidebar"></div>
+        <!-- /.sidebar -->
         <div class="main_body">
             <div class="main_body_navbar"></div>
             <!-- /.main_body_navbar -->
             <div class="main_body_song_section">
-                    <div class="test"></div>
+
             </div>
             <!-- /.main_body_song_section -->
         </div>
         <!-- /.main_body -->
-        <!-- /.sidebar -->
-
 
     </div>
     <!-- /.main -->
 
 
     <div class="nav">
-        <div class="track_details"></div>
+        <div class="track_details">
+            <img src="assets/img/sinister.jpeg" alt="cover album sinister">
+            <div class="track_name">
+                <h5>Sinister</h5>
+                <a  class="brano_nome" href="#"><h6>Brano Nome</h6></a>
+            </div>
+            <!-- /.track_name_and_album -->
+
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-folder"></i>
+        </div>
         <!-- /.track_details -->
-        <div class="player"></div>
+        <div class="player">
+            <div class="icon">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+            <div class="bar_player">
+                <h6>0:25</h6>
+                <div class="bar">
+                    <div class="line">
+                        <div class="circle"></div>
+                        <!-- /.circle -->
+                    </div>
+                </div>
+                <!-- /.bar -->
+                <h6>4:35</h6>
+            </div>
+            <!-- /.bar_player -->
+            <!-- /.icon -->
+
+        </div>
         <!-- /.player -->
-        <div class="controls"></div>
+        <div class="controls">
+            <div class="icon">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <!-- /.icon -->
+           <div class="bar_volume">
+            <div class="bar">
+                <div class="line">
+                    <div class="circle"></div>
+                    <!-- /.circle -->
+                </div>
+            </div>
+            <!-- /.bar -->
+           </div>
+           <!-- /.bar_volume -->
+        </div>
         <!-- /.controls -->
     </div>
     <!-- /.nav -->
