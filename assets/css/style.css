@@ -218,6 +218,9 @@ a {
     background-color: var(--clr-dark);
     padding: 1rem;
     color: var(--clr-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main_options * {
