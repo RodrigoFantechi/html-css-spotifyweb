@@ -207,6 +207,8 @@ a {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
+    overflow: auto;
+
 }
 
 
@@ -216,64 +218,6 @@ a {
     width: 230px;
     height: 100%;
     background-color: var(--clr-dark);
-    padding: 1rem;
-    color: var(--clr-light);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.main_options * {
-    vertical-align: middle;
-    margin: 0.2rem 0;
-}
-
-.main_options {
-    margin: 1.5rem 0;
-}
-
-.sidebar a {
-    color: var(--clr-light);
-}
-
-.sidebar .big_logo {
-    width: 130px;
-}
-
-.sidebar_icons {
-    width: 2rem;
-    display: none;
-}
-
-.sidebar_contents svg {
-    width: 2rem;
-
-}
-.playlist{
-    display: flex;
-    flex-direction: column;
-}
-.square{
-    width: 37px;
-    height: 37px;
-    background-color: var(--clr-square);
-    text-align: center;
-    display: inline-block;
-    font-size: 3rem;
-    color: var(--clr-dark);
-}
-.add_playlist *{
-    vertical-align: middle;
-}
-.playlist h4{
-    margin-bottom: 1rem;
-}
-.playlist_items{
-    margin-top: 1rem;
-}
-.playlist_items a{
-margin-bottom: 1rem;
-display: inline-block;
 }
 
 
@@ -282,8 +226,6 @@ display: inline-block;
 .main_body {
     height: 100%;
     width: calc(100% - 230px);
-    overflow: auto;
-
 }
 
 .main_body_navbar {
@@ -300,6 +242,12 @@ display: inline-block;
     height: 100%;
 }
 
+.test{
+    width: 20px;
+    height: 2000px;
+    background-color: red;
+
+}
 /* #endregion MAIN */
 
 /* #region FLEXBOX GRID */
@@ -357,18 +305,55 @@ display: inline-block;
 
 /* #region RESPONSIVE */
 @media screen and (max-width: 878px) {}
-
+.controls .bar {
+    width: 118px;
+}
 
 @media screen and (max-width: 639px) {
+    
+    
+    /* RESPONSIVE NAVBAR */
+    
     .track_details {
         flex-shrink: 1;
     }
-
+    
     .controls {
         flex-shrink: 1;
     }
 
+    .controls .bar {
+        height: 4px;
+        width: 85px;
+        background-color: var(--clr-bar);
+    }
+    .controls .icon {
+        margin-right: 0.0rem;
+    }
+    .track_name {
+        display: inline-block;
+        margin-left: 0.5rem;
+        margin-right: 1rem;
+    }
+    
+    .player .icon .fa-solid {
+    
+        margin: 0 0.4rem;
+    }
+    
+    .player .icon .fa-regular {
+        font-size: 1.5rem;
+        margin: 0 0.5rem;
+        transition: 0.2s;
+    }
+    .nav {
+        padding: 0.5rem 0.75rem;
+    }
+    .track_details .icon .fa-regular{
+     display: block;
+    }
 
+/* FLEX_GRID */
 
     .col-md-1 {
         width: calc((100% / 12) * 1);
@@ -420,7 +405,46 @@ display: inline-block;
 }
 
 @media screen and (max-width: 552px) {
+    
+/* RESPONSIVE NAVBAR */
+     
+.track_details {
+    flex-shrink: 2;
+}
 
+.controls {
+    flex-shrink: 1;
+}
+.controls .bar {
+    height: 4px;
+    width: 75px;
+    background-color: var(--clr-bar);
+}
+.controls .icon {
+    margin-right: 0rem;
+}
+.track_name {
+    display: inline-block;
+    margin-left: 0.75rem;
+    margin-right: 1.2rem;
+}
+
+.player .icon .fa-solid {
+
+    margin: 0 0.2rem;
+}
+
+.player .icon .fa-regular {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: 0.2s;
+}
+.nav {
+  
+    padding: 0.5rem 0.75rem;
+}
+
+/* FLEX_GRID */
 
     .col-sm-1 {
         width: calc((100% / 12) * 1);
@@ -469,6 +493,8 @@ display: inline-block;
     .col-sm-12 {
         width: 100%;
     }
+
+     
 }
 
 /* #endregion RESPONSIVE */
