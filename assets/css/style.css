@@ -51,6 +51,15 @@ body {
     fill: #A3A3A3;
 }
 
+.btn {
+    display: inline-block;
+    color: var(--clr-lighter);
+    border: 1px solid var(--clr-lighter);
+    border-radius: 1.5rem;
+    padding: 0.75rem 2.5rem;
+    font-size: 0.75rem;
+}
+
 /* #endregion UTILITIES */
 
 /* #region NAVBAR */
@@ -225,8 +234,6 @@ a {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
-
-
 }
 
 
@@ -273,9 +280,11 @@ a {
 .sidebar_contents svg {
     width: 2rem;
 }
-.sidebar_bottom svg{
+
+.sidebar_bottom svg {
     width: 1.5rem
-} 
+}
+
 .playlist {
     display: flex;
     flex-direction: column;
@@ -290,7 +299,7 @@ a {
     font-size: 3rem;
     color: var(--clr-dark);
     line-height: 37px;
-    
+
 
 }
 
@@ -310,14 +319,17 @@ a {
     margin-bottom: 1rem;
     display: block;
 }
-.top_sidebar_bottom_part{
+
+.top_sidebar_bottom_part {
     border-bottom: 1px solid var(--clr-light);
     padding: 0.5rem 0;
 }
-.bottom_sidebar_bottom_part{
+
+.bottom_sidebar_bottom_part {
     padding: 1rem 0;
 }
-.profile{
+
+.profile {
     width: 2rem;
     height: 2rem;
     background-color: var(--clr-light);
@@ -327,7 +339,9 @@ a {
     margin-right: 0.5rem;
 
 }
-.sidebar_bottom a *, .bottom_sidebar_bottom_part *{
+
+.sidebar_bottom a *,
+.bottom_sidebar_bottom_part * {
     vertical-align: middle;
 }
 
@@ -336,29 +350,40 @@ a {
 .sidebar a:hover {
     color: var(--clr-lighter);
 }
-.main_options a:hover svg, .sidebar_bottom a:hover svg{
+
+.main_options a:hover svg,
+.sidebar_bottom a:hover svg {
     fill: var(--clr-lighter);
 }
+
 .sidebar a:hover .square {
     background-color: var(--clr-lighter);
 }
 
 
 /* MAIN BODY */
-
 .main_body {
     height: 100%;
     width: calc(100% - 230px);
 
 }
 
+/* MANI BODY NAVBAR */
+
+
 .main_body_navbar {
     height: 90px;
-    width: 100%;
+    width: calc(100% - 230px);
     background-color: var(--clr-main-nav);
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2rem;
 
 }
+
+/* MANI BODY SONG SECTION */
 
 .main_body_song_section {
     background-color: var(--clr-song-section);
