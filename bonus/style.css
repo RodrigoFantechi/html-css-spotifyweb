@@ -884,7 +884,14 @@ a {
         display: none;
     }
 
-
+    .main_body_navbar{
+        display: none;
+    }
+    .main_body_song_section {
+      
+        padding: 1rem 1rem 1rem 1rem;
+       
+    }
 }
 
 /* #endregion RESPONSIVE */
