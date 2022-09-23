@@ -686,11 +686,12 @@ a {
     .col-md-12 {
         width: 100%;
     }
+    .disapear{
+        display: none;
+    }
+
 }
 
-.controls .bar {
-    width: 118px;
-}
 
 
 @media screen and (max-width: 639px) {
@@ -741,6 +742,7 @@ a {
         display: block;
     }
 
+
     /* FLEX_GRID */
 
     .col-sm-1 {
@@ -789,6 +791,10 @@ a {
 
     .col-sm-12 {
         width: 100%;
+    }
+
+    .disapear2{
+        display: none;
     }
 }
 
@@ -877,6 +883,7 @@ a {
     .track_details img {
         display: none;
     }
+
 
 }
 
