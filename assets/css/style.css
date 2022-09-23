@@ -263,6 +263,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     font-weight: bold;
+    overflow: hidden;
 }
 
 .sidebar svg {
@@ -325,7 +326,9 @@ a {
 
 .playlist_items {
     margin-top: 1rem;
-    overflow: auto;
+    overflow-y: auto;
+    height: 220px;
+    
 }
 
 .playlist_items a {
