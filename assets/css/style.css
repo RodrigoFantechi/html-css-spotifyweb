@@ -848,8 +848,8 @@ a {
         width: 50px;
     }
 
-    .sidebar-top {
-
+    .sidebar_top {
+        padding: 0.5rem;
         display: flex;
         justify-content: center;
     }
@@ -862,10 +862,6 @@ a {
     .main_body {
         height: 100%;
         width: calc(100% - 50px);
-    }
-
-    .sidebar_top {
-        padding: 0.5rem;
     }
 
     .main_body_navbar {
