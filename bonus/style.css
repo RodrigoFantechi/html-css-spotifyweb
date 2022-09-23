@@ -328,7 +328,7 @@ a {
     margin-top: 1rem;
     overflow-y: auto;
     height: 220px;
-    
+
 }
 
 .playlist_items a {
@@ -487,52 +487,52 @@ a {
 }
 
 .metal {
-    background-image: url(../img/metal_lifting.jpg);
+    background-image: url(../assets/img/metal_lifting.jpg);
 
 }
 
 .stranger {
-    background-image: url(../img/stranger.jpeg);
+    background-image: url(../assets/img/stranger.jpeg);
 
 }
 
 .place {
-    background-image: url(../img/aquietplace.jpeg);
+    background-image: url(../assets/img/aquietplace.jpeg);
 
 }
 
 .split {
-    background-image: url(../img/split.jpeg);
+    background-image: url(../assets/img/split.jpeg);
 
 }
 
 .cure {
-    background-image: url(../img/cure.jpeg);
+    background-image: url(../assets/img/cure.jpeg);
 
 }
 
 .sinister {
-    background-image: url(../img/sinister.jpeg);
+    background-image: url(../assets/img/sinister.jpeg);
 
 }
 
 .release {
-    background-image: url(../img/radar.jpeg);
+    background-image: url(../assets/img/radar.jpeg);
 
 }
 
 .daily {
-    background-image: url(../img/mixdaily.jpeg);
+    background-image: url(../assets/img/mixdaily.jpeg);
 
 }
 
 .ray {
-    background-image: url(../img/youg.jpeg);
+    background-image: url(../assets/img/youg.jpeg);
 
 }
 
 .einaudi {
-    background-image: url(../img/einaudi.jpeg);
+    background-image: url(../assets/img/einaudi.jpeg);
 
 }
 
@@ -798,10 +798,11 @@ a {
 
     .track_details {
         flex-shrink: 2;
+        
     }
-
     .controls {
         flex-shrink: 1;
+        
     }
 
     .controls .bar {
@@ -832,7 +833,8 @@ a {
     }
 
     .nav {
-        padding: 0.5rem 0.75rem;
+        padding: 0.5rem;
+        gap: 0.5rem;
     }
 
 
@@ -848,8 +850,8 @@ a {
         width: 50px;
     }
 
-    .sidebar-top {
-
+    .sidebar_top {
+        padding: 0.5rem;
         display: flex;
         justify-content: center;
     }
@@ -863,14 +865,19 @@ a {
         height: 100%;
         width: calc(100% - 50px);
     }
-
-    .sidebar_top {
-        padding: 0.5rem;
-    }
+    
+    
 
     .main_body_navbar {
         width: calc(100% - 50px);
     }
+
+    .controls .fa-list,
+    .controls .fa-display,
+    .track_details img {
+        display: none;
+    }
+
 }
 
 /* #endregion RESPONSIVE */
