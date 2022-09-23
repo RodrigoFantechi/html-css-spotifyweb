@@ -262,7 +262,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: auto;
     font-weight: bold;
 }
 
@@ -302,10 +301,6 @@ a {
     width: 1.5rem
 }
 
-.playlist {
-    display: flex;
-    flex-direction: column;
-}
 
 .square {
     width: 37px;
@@ -330,6 +325,7 @@ a {
 
 .playlist_items {
     margin-top: 1rem;
+    overflow: auto;
 }
 
 .playlist_items a {
@@ -850,7 +846,9 @@ a {
     }
 
     .sidebar-top {
-        padding: 0.5rem;
+
+        display: flex;
+        justify-content: center;
     }
 
     .sidebar_bottom {
@@ -866,6 +864,7 @@ a {
     .sidebar_top {
         padding: 0.5rem;
     }
+
     .main_body_navbar {
         width: calc(100% - 50px);
     }
